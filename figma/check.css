@@ -1,0 +1,129 @@
+
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color: white;
+}
+.header{
+    height: 80px;
+    background-color:#d7c8c8;
+     padding: 20px 0;
+    position: relative;
+
+}
+.navbar img{
+    height: 20px;
+    top: 10px;
+    position: relative;
+}
+ul{
+    display: flex;
+    list-style: none;
+    line-height: 35px;
+}
+ul li{
+    margin: 0 20px;
+}
+ul li a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none!important;
+    color: #101317;
+    font-weight: 600;
+}
+label #btn
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50);
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+ label #cancel{
+
+     position: absolute;
+     top: 50%;
+     transform: translate(0, -50);
+     right: 30px;
+     font-size: 25px;
+     cursor: pointer;
+     display: none;
+ }
+ #check{
+     display: none;
+ }
+
+.icon1{
+width: 15px;
+margin-left: 1200px;
+ position: absolute;
+ height: 2px;
+ left: 0%;
+ right: 0%;
+ top: calc(50% - 2px/2 - 3.5px);
+
+ background: #F1F2F6;
+ border-radius: 20px;}
+
+ .icon2 {
+     margin-left: 1200px;
+
+width: 15px;
+     position: absolute;
+     height: 2px;
+     left: 0;
+     right: 0;
+     top: calc(50% - 2px / 2 + 4.5px);
+
+     background: #F1F2F6;
+     border-radius: 20px;
+ }
+
+ @media screen and (max-width: 600px) {
+    label #btn{
+        display: inline-block!important;
+    }
+ ul{
+     position: fixed!important;
+     top: 0!important;;
+     right: -100%!important;
+     width: 50%!important;
+     height: 100vh!important;
+     background-color: black!important;
+     display: block!important;
+     padding-top: 80px!important;
+     color: white!important;
+     line-height: 40px!important;
+     z-index: 100!important;
+     transition: 0.5s!important;
+ }
+ ul li a{
+     color: white!important;
+     font-size: 20px!important;
+ }
+ ul li{
+     margin-left: 50px!important;
+ }
+ #check:checked ~ ul{
+     right: 0!important;
+ }
+    #check:checked ~ label #cancel{
+        display: block!important;
+        z-index: 101!important;
+        color: #fff3cd!important;
+    }
+}
